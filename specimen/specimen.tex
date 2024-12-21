@@ -9,12 +9,21 @@
 
 \newcommand*\diff{\mathop{}\!\symrm{d}}
 
+% \newcommand{\SpecimenBlock}[2]{
+% 	\section*{#1 (+ #2)}
+% 	\begin{itemize}
+% 		\item Inline: $\frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \bigl( ∏ᵢ₌₁ⁿ xᵢ \bigr)^{\frac 1n}$, and $∬_D \bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y )$.
+% 		\item Display: \[ \frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \left( ∏ᵢ₌₁ⁿ xᵢ \right)^{\frac 1n} \quad \text{and} \quad ∬_D \Bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \Bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y ) \text . \]
+% 		\item ISO typesetting: $\symup e ^{\symup i\symup π} + 1 = 0$, and $𝐚⋅(𝐛×𝐜) = 𝐛⋅(𝐜×𝐚) = 𝐜⋅(𝐚×𝐛)$.
+% 	\end{itemize}
+% }
+
 \newcommand{\SpecimenBlock}[2]{
 	\section*{#1 (+ #2)}
 	\begin{itemize}
-		\item Inline: $\frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \bigl( ∏ᵢ₌₁ⁿ xᵢ \bigr)^{\frac 1n}$, and $∬_D \bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y )$.
-		\item Display: \[ \frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \left( ∏ᵢ₌₁ⁿ xᵢ \right)^{\frac 1n} \quad \text{and} \quad ∬_D \Bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \Bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y ) \text . \]
-		\item ISO typesetting: $\symup e ^{\symup i\symup π} + 1 = 0$, and $𝐚⋅(𝐛×𝐜) = 𝐛⋅(𝐜×𝐚) = 𝐜⋅(𝐚×𝐛)$.
+		\item Inline: $\frac{1}{n}\sum_{i=1}^{n}x_{i}\geqslant\left(\prod_{i=1}^{n}x_{i}\right)^{\frac{1}{n}}\quad\mathrm{and}\quad\iint_{D}(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})\mathrm{d}x\mathrm{d}y=\oint_{\partial D}(P\mathrm{d}x+Q\mathrm{d}y)$.
+		\item Display: \[\frac{1}{n}\sum_{i=1}^{n}x_{i}\geqslant\left(\prod_{i=1}^{n}x_{i}\right)^{\frac{1}{n}}\quad\mathrm{and}\quad\iint_{D}(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})\mathrm{d}x\mathrm{d}y=\oint_{\partial D}(P\mathrm{d}x+Q\mathrm{d}y).\]
+		\item ISO typesetting: $\symup e ^{\symup i\symup π} + 1 = 0$, and $a\cdot(b\times c)=b\cdot(c\times a)=c\cdot(a\times b)$.
 	\end{itemize}
 }
 
@@ -68,7 +77,7 @@
 \SpecimenBlock{KpMath Bold}{KpRoman}
 
 \setmainfont{KpSans-Regular}
-\setmathfont{KpMath-Sans}[Path=../font/,Extension=.ttf]
+\setmathfont{KpMath-Sans}%[Path=../font/,Extension=.ttf]% 设置路径会报错
 
 \SpecimenBlock{KpMath Sans}{KpSans}
 
@@ -82,7 +91,7 @@
 
 \SpecimenBlock{STIX Math}{STIX}
 
-\setmainfont{STIXTwoText-Regular}
+\setmainfont{STIXTwoText}
 \setmathfont{STIXTwoMath-Regular}[Path=../font/,Extension=.ttf]
 
 \SpecimenBlock{STIX Two Math}{STIX Two Text}
